@@ -1,4 +1,4 @@
-export const AppHeader = ({ todoCount }: { todoCount: number }) => {
+export const AppHeader = ({ todoCount }: { todoCount?: number }) => {
   return (
     <header className="border border-spacing-2 rounded-lg mt-4">
       <div className="p-6">
