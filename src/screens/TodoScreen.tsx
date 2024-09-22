@@ -59,7 +59,7 @@ export const TodoScreen = () => {
 
   return (
     <div className="flex flex-col max-w-screen-sm mx-auto min-h-screen">
-      <AppHeader todoCount={todos.length} page="todo" />
+      <AppHeader todoCount={todos.filter(todo => !todo.completed).length} page="todo" />
       <div className="flex-1">
         <div className="flex justify-between items-center">
           <form className="pt-6 pb-6" onSubmit={addTodo}>
